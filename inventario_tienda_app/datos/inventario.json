@@ -1,0 +1,65 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Laptop HP Pavilion",
+            "cantidad": 15,
+            "precio": 899.99
+        },
+        {
+            "id": 2,
+            "nombre": "Mouse Inalámbrico Logitech",
+            "cantidad": 50,
+            "precio": 29.99
+        },
+        {
+            "id": 3,
+            "nombre": "Teclado Mecánico RGB",
+            "cantidad": 25,
+            "precio": 89.99
+        },
+        {
+            "id": 4,
+            "nombre": "Monitor Samsung 24\"",
+            "cantidad": 10,
+            "precio": 249.99
+        },
+        {
+            "id": 5,
+            "nombre": "Disco Duro Externo 1TB",
+            "cantidad": 30,
+            "precio": 79.99
+        },
+        {
+            "id": 6,
+            "nombre": "Memoria USB 64GB",
+            "cantidad": 100,
+            "precio": 19.99
+        },
+        {
+            "id": 7,
+            "nombre": "Audífonos Bluetooth Sony",
+            "cantidad": 20,
+            "precio": 129.99
+        },
+        {
+            "id": 8,
+            "nombre": "Webcam HD 1080p",
+            "cantidad": 15,
+            "precio": 59.99
+        },
+        {
+            "id": 9,
+            "nombre": "Router WiFi 6",
+            "cantidad": 8,
+            "precio": 199.99
+        },
+        {
+            "id": 10,
+            "nombre": "Cargador Portátil 20000mAh",
+            "cantidad": 40,
+            "precio": 39.99
+        }
+    ],
+    "ids_disponibles": []
+}
