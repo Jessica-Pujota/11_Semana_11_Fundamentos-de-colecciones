@@ -1,0 +1,4 @@
+1,Laptop Gamer,10,1200.00
+2,Mouse RGB,45,29.99
+3,Teclado Mecánico,30,89.99
+4,Monitor 4K,15,450.00

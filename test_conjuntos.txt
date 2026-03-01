@@ -1,0 +1,2 @@
+1,Laptop Gamer,10,1200.00
+2,Mouse RGB,45,29.99
