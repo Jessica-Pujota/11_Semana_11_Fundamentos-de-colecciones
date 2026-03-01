@@ -1,13 +1,10 @@
-"""
-IMPLEMENTACIÓN CRUD CON DICCIONARIOS
-"""
+""" IMPLEMENTACIÓN CRUD CON DICCIONARIOS"""
 from typing import Dict, Optional, List
 import sys
 import os
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from Inventario.modelos.producto import Producto
-
 class DiccionarioInventario: #Implementación de inventario usando DICCIONARIO.
     
     def __init__(self, gestor=None):
@@ -78,7 +75,6 @@ class DiccionarioInventario: #Implementación de inventario usando DICCIONARIO.
             return False
     
     # ===== OPERACIONES ESPECÍFICAS =====
-    
     def filtrar_por_condicion(self, **condiciones) -> Dict[int, Producto]: #Filtra productos por condiciones
         resultado = self.productos.copy()
         
@@ -91,9 +87,7 @@ class DiccionarioInventario: #Implementación de inventario usando DICCIONARIO.
         if 'cantidad_min' in condiciones:
             resultado = {k: v for k, v in resultado.items() 
                         if v.cantidad >= condiciones['cantidad_min']}
-        
         return resultado
-    
     def agrupar_por_rango_precio(self) -> Dict[str, List[Producto]]: #Agrupa productos por rangos de precio
         grupos = {
             'económico (< $50)': [],
@@ -110,7 +104,6 @@ class DiccionarioInventario: #Implementación de inventario usando DICCIONARIO.
                 grupos['caro (> $200)'].append(producto)
         
         return grupos
-    
     def estadisticas_por_categoria(self) -> Dict[str, dict]: #Calcula estadísticas por categoría
         grupos = self.agrupar_por_rango_precio()
         estadisticas = {}
@@ -128,5 +121,4 @@ class DiccionarioInventario: #Implementación de inventario usando DICCIONARIO.
                 }
             else:
                 estadisticas[categoria] = {'cantidad': 0}
-        
         return estadisticas
